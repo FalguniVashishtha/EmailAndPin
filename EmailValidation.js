@@ -1,6 +1,6 @@
 console.log("Welcome To Email Validation.");
 
-const emailRegex = RegExp("^[a-zA-Z][.@a-zA-Z]*$");
+const emailRegex = RegExp("^[a-zA-Z]*[@]{1}[.a-z]*$");
 
 function validateEmail(email){
     if(emailRegex.test(email))
@@ -10,9 +10,9 @@ function validateEmail(email){
 }
 
 try{
-    validateEmail("abcA@gmail.com");
-    validateEmail("abc.xyz@bridgelabz.co.in");
-    validateEmail(".abc@abc.com");
+    validateEmail("abc@bridgelabz.co.in");
+    validateEmail("abc@bridgelabz.co.in");
+    validateEmail("abcgmailcom.com");
 }
 catch(e){
     console.error(e);
