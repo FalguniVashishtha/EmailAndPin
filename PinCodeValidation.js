@@ -9,15 +9,7 @@ function validatePincode(pincode){
 }
 
 try{
-    validatePincode("400088");
-    validatePincode("004456");   
-}
-catch(e){
-    console.error(e);
-}
-
-try{
-    validatePincode("400");  
+    validatePincode("A400088");  
 }
 catch(e){
     console.error(e);
